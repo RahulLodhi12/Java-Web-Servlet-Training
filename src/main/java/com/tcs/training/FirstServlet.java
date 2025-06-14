@@ -20,6 +20,8 @@ public class FirstServlet extends HttpServlet {
         super();
     }
 
+//Servlet is a Java program that runs on a web server and helps handle web requests.
+	
     //Get -> Fetching
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -29,7 +31,7 @@ public class FirstServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		
-		//Flow -> Html -> submit -> action -> "first" -> request -> requesting for fetching -> session ke through attribute set 
+		//Flow -> runs on server -> doGet() -> change url(index.html) -> Html -> submit -> action -> "first" -> request -> requesting for fetching -> session ke through attribute set 
 		
 		//Getting values from Request -> fetching
 		String newName = request.getParameter("name");
